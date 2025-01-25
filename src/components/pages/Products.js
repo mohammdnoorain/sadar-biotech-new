@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import HeroSectionProduct from "../HeroSectionProduct";
 import Footer from "../Footer";
+import Showcase2 from "../Showcase2";
+import "../styleCssFiles/ProductShowcase.css"; // Import the CSS file for styles
 
 const Products = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -419,9 +421,10 @@ const Products = () => {
   return (
     <div>
       <HeroSectionProduct />
+      <Showcase2/>
 
-      <div className="w-full p-6 bg-gradient-to-b from-green-300 to-blue-100  py-10">
-        <h1 className="text-4xl font-bold mb-6 text-center text-black hover:text-white transition-colors duration-300" >Our Products</h1>
+      <div className="w-full p-6 bg-white to-blue-100  py-10">
+        <h1 className="text-4xl font-bold mb-6 text-center text-green-500 hover:text-blue-800 transition-colors duration-300" >Our Products</h1>
         {productData.map((item, index) => (
           <div
             key={item.id}
@@ -433,6 +436,9 @@ const Products = () => {
             >
               {item.name}
             </h2>
+            <div className="relative w-full flex justify-center items-center">
+        <div className="burning-line movable-line"></div>
+      </div>
             {activeIndex === index && (
              <div>
              {item.table.map((tableItem, i) => (

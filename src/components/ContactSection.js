@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const ContactSection = () => {
   return (
@@ -16,16 +17,23 @@ const ContactSection = () => {
               <p className="transition-transform duration-300 hover:translate-x-2">
                 <span className="font-semibold text-green-500">Phone:</span> +91 9226077649
               </p>
-              <p className="transition-transform duration-300 hover:translate-x-2">
+              {/* <p className="transition-transform duration-300 hover:translate-x-2">
                 <span className="font-semibold text-green-500">Registered office:</span>
                 Sy. No. 136/11, Gauravaddo, Calangute, North Goa 403516
               </p>
               <p className="transition-transform duration-300 hover:translate-x-2">
                 <span className="font-semibold text-green-500">Admin office:</span>
                 Above Puma Store, Floor 2, Chogm Road, Porvorim, North Goa 403521
-              </p>
+              </p> */}
+              
            
             </div>
+            <button
+    type="submit"
+    className="h-12  mb-5 bg-green-600 text-white p-3 rounded-md shadow-lg hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 transition-all duration-300 lg:w-auto px-6 mt-8"
+  >
+  <Link to='/contact'>  Contact </Link>
+  </button>
           </div>
 
           {/* Right Div - Map */}
@@ -40,7 +48,9 @@ const ContactSection = () => {
       allowFullScreen=""
       loading="lazy"
       title="Google Map"
+
     ></iframe>
+    
   </div>
 
   {/* Green Div */}
