@@ -5,12 +5,13 @@ const ProductShowcase = () => {
   const products = [
     {
       name: "Agro-Technical Product",
-      manufacturer: "Sujag Fine Chemicals",
+      manufacturer: "Sujag Fine Chemicals Pvt Ltd",
       description:
         "Innovative solutions for sustainable crop production and agricultural efficiency.",
       bgColor: "bg-green-100",
       textColor: "text-green-700",
       image: "images/sujag.jpg",
+      link: "https://sujagfinechemicals.com/",
     },
     {
       name: "Surfactant",
@@ -35,43 +36,46 @@ const ProductShowcase = () => {
   const [hoverIndex, setHoverIndex] = useState(null);
 
   return (
-    <div className="flex flex-col items-center  bg-white p-16">
-      <h1 className="text-4xl font-bold mb-12 text-green-500">
+    <div className="flex flex-col items-center bg-white p-8 sm:p-16">
+      <h1 className="text-2xl sm:text-4xl font-bold mb-8 sm:mb-12 text-green-500 text-center">
         Our Products and Manufacturers
       </h1>
       {/* Burning Movable Line */}
       <div className="relative w-full flex justify-center items-center">
         <div className="burning-line movable-line"></div>
       </div>
-      {/* Horizontal Layout */}
-      <div className="flex justify-center gap-8 mt-8">
+      {/* Cards Layout */}
+      <div className="flex flex-wrap justify-center gap-6 sm:gap-8 mt-8">
         {products.map((product, index) => (
           <div
             key={index}
             onMouseEnter={() => setHoverIndex(index)}
             onMouseLeave={() => setHoverIndex(null)}
-            className={`w-64 h-66 flex flex-col items-center justify-center bg-white shadow-lg rounded-lg overflow-hidden transition-all duration-500 ${
-              hoverIndex === index ? "scale-110 shadow-2xl" : "scale-100"
+            className={`w-full sm:w-64 h-auto flex flex-col items-center justify-between bg-white shadow-lg rounded-lg overflow-hidden transition-all duration-500 ${
+              hoverIndex === index ? "scale-105 shadow-2xl" : "scale-100"
             }`}
           >
-            <div className="relative w-full h-40">
+            {/* Image Section */}
+            <div className="relative w-full h-44">
               <img
                 src={product.image}
                 alt={product.name}
                 className="w-full h-full object-cover"
               />
               <h2
-                className={`absolute bottom-0 left-0 right-0 bg-opacity-75 bg-black text-white text-center text-lg font-bold py-1`}
+                className={`absolute bottom-0 left-0 right-0 bg-opacity-75 bg-black text-white text-center text-base sm:text-lg font-bold py-1`}
               >
                 {product.name}
               </h2>
             </div>
+            {/* Manufacturer Section */}
             <p
-              className={`mt-4 text-base font-semibold text-center ${product.textColor}`}
+              className={`mt-4 text-sm sm:text-base font-semibold text-center ${product.textColor}`}
             >
               {product.manufacturer}
             </p>
-            <p className="text-sm text-gray-600 text-center mt-2 px-4">
+            {/* Description Section */}
+            <p className="text-xs sm:text-sm text-gray-600 text-center mt-2 px-4 mb-4">
               {product.description}
             </p>
           </div>

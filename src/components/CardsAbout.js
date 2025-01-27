@@ -27,7 +27,7 @@ const CardsAbout = () => {
   return (
     <div className="bg-white flex flex-col items-center py-16 px-6">
       {/* Title */}
-      <h1 className="text-4xl font-bold text-blue-600 hover:text-green-500 transition-colors duration-300 mb-8">
+      <h1 className="text-4xl font-bold text-green-500 hover:text-blue-800 transition-colors duration-300 mb-8">
         OUR VISION, MISSION AND VALUES
       </h1>
 

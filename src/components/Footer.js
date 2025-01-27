@@ -12,15 +12,15 @@ function Footer() {
             <h2>About Us</h2>
             <Link to="/products">How it works</Link>
             <Link to="/research">Testimonials</Link>
-            <Link to="/about">Careers</Link>
-            <Link to="/about">Investors</Link>
+            {/* <Link to="/about">Careers</Link>
+            <Link to="/about">Investors</Link> */}
             <Link to="/about">Terms of Service</Link>
           </div>
           <div className="footer-link-items">
             <h2>Contact Us</h2>
             <Link to="/contact">Contact</Link>
             <Link to="/contact">Support</Link>
-            <Link to="/about">Sponsorships</Link>
+            {/* <Link to="/about">Sponsorships</Link> */}
           </div>
         </div>
         <div className="footer-link-wrapper">

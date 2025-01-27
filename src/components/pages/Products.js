@@ -421,7 +421,7 @@ const Products = () => {
   return (
     <div>
       <HeroSectionProduct />
-      <Showcase2/>
+      {/* <Showcase2/> */}
 
       <div className="w-full p-6 bg-white to-blue-100  py-10">
         <h1 className="text-4xl font-bold mb-6 text-center text-green-500 hover:text-blue-800 transition-colors duration-300" >Our Products</h1>
@@ -434,8 +434,14 @@ const Products = () => {
               onClick={() => toggleDropdown(index)}
               className="text-2xl font-semibold text-center cursor-pointer transition-transform duration-300 hover:scale-105 hover:text-green-500"
             >
+                 <span className="text-3xl mr-5">
+              {activeIndex === index ? "-" : "+"}
+            </span>
+
               {item.name}
+           
             </h2>
+         
             <div className="relative w-full flex justify-center items-center">
         <div className="burning-line movable-line"></div>
       </div>

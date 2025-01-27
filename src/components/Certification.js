@@ -12,19 +12,23 @@ const Certification = () => {
   };
 
   return (
-    <div className="bg-white flex items-center justify-center p-8">
+    <div className="bg-white flex items-center justify-center p-4 sm:p-8">
       <div
-        className="bg-white shadow-lg rounded-lg p-6 flex flex-col lg:flex-row gap-6 w-full"
-        style={{ maxWidth: "73%", height: "50vh" }} // Increased width and height
+        className="bg-white shadow-lg rounded-lg p-6 flex flex-col lg:flex-row gap-6 w-full max-w-screen-lg"
+        style={{ height: "auto" }} // Adjust height dynamically
       >
         {/* Left Content */}
-        <div className="flex-1 mt-24">
-          <h2 className="text-2xl font-bold mb-4 text-green-500">CERTIFICATE</h2>
-          <p className="text-sm mb-2">
+        <div className="flex-1">
+          <h2 className="text-xl sm:text-2xl font-bold mb-4 text-green-500">
+            CERTIFICATE
+          </h2>
+          <p className="text-sm sm:text-base mb-2">
             This certifies that the management system of Sadar Biotech has been
             assessed and found compliant with ISO 9001:2015 standards.
           </p>
-          <p className="text-sm">Validity: 20/11/2024 - 19/11/2027.</p>
+          <p className="text-sm sm:text-base">
+            Validity: 20/11/2024 - 19/11/2027.
+          </p>
         </div>
 
         {/* Right Content */}
@@ -32,7 +36,7 @@ const Certification = () => {
           <img
             src="/images/iso.jpg" // Correct path assuming the image is in public/images
             alt="ISO Certification"
-            className="w-48 h-auto cursor-pointer border border-gray-300 rounded-lg shadow-md"
+            className="w-36 sm:w-48 h-auto cursor-pointer border border-gray-300 rounded-lg shadow-md"
             onClick={handleImageClick}
           />
         </div>
