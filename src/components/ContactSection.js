@@ -30,7 +30,7 @@ const ContactSection = () => {
             </div>
             <button
     type="submit"
-    className="h-12  mb-5 bg-green-600 text-white p-3 rounded-md shadow-lg hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 transition-all duration-300 lg:w-auto px-6 mt-8"
+    className="h-12  mb-5 bg-green-500 text-white p-3 rounded-md shadow-lg hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-400 transition-all duration-300 lg:w-auto px-6 mt-8"
   >
   <Link to='/contact'>  Contact </Link>
   </button>

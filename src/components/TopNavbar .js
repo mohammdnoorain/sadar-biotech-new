@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FaFacebook, FaLinkedin, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 
 
@@ -7,11 +8,14 @@ const TopNavbar = () => {
     <div className="fixed top-0 h-10 bg-white flex flex-col md:flex-row items-center justify-between px-4 py-4 sm:py-6 w-full min-h-[80px] z-20">
       {/* Logo Section */}
       <div className="flex-shrink-0 md:mt-4">
+        <Link to='/'>
         <img 
           src="images/logo.jpg" 
           alt="Logo" 
           className="w-20 sm:w-24 md:w-36 mt-[-20px] md:mt-[-38px] md:mb-[-44px]" 
+          
         />
+        </Link>
       </div>
 
       {/* Contact Section */}

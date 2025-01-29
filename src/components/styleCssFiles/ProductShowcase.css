@@ -12,9 +12,13 @@
 .heading {
   font-size: 1.8rem;
   font-weight: bold;
-  color: #16a34a;
+  color: #22c55e;
+  
   text-align: center;
   margin-bottom: 20px;
+}
+.heading:hover {
+  color: #1e3a8a; /* Tailwind's blue-800 color */
 }
 
 @media (min-width: 640px) {
