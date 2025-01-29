@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import '../components/styleCssFiles/burningLine.css'
 
 const Showcase = () => {
   const navigate = useNavigate();
@@ -32,9 +33,12 @@ const Showcase = () => {
 
   return (
     <div className="min-h- bg-white flex flex-col items-center py-16 px-6">
-      <h1 className="text-4xl font-bold text-green-500 mb-8 hover:text-blue-800">
+      <h1 className="text-4xl font-bold text-green-500 mb-4 hover:text-blue-800">
         We Target the Industries
       </h1>
+      <div className="burning-line-container mb-8">
+        <div className="burning-line"></div>
+      </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {industries.map((industry, index) => (
           <div

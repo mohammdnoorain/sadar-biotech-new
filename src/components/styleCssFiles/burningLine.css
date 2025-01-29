@@ -1,0 +1,39 @@
+/* ================= BURNING LINE ================= */
+.burning-line-container {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden; /* Ensures it doesn't affect navbar */
+  }
+  
+  .burning-line {
+    width: 200px;
+    max-width: 90%;
+    height: 5px;
+    background: linear-gradient(90deg, transparent, #00ff00, transparent);
+    animation: burning-effect 1.5s infinite, move-line 3s linear infinite;
+    filter: blur(4px);
+    border-radius: 4px;
+  }
+  
+  /* Burning Effect */
+  @keyframes burning-effect {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 200%;
+    }
+  }
+  
+  /* Moving Effect */
+  @keyframes move-line {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(50%);
+    }
+  }

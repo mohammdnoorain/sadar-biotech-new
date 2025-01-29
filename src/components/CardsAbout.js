@@ -1,5 +1,5 @@
 import React from "react";
-
+import '../components/styleCssFiles/burningLine.css'
 const CardsAbout = () => {
   const cards = [
     {
@@ -27,10 +27,12 @@ const CardsAbout = () => {
   return (
     <div className="bg-white flex flex-col items-center py-16 px-6">
       {/* Title */}
-      <h1 className="text-4xl font-bold text-green-500 hover:text-blue-800 transition-colors duration-300 mb-8">
+      <h1 className="text-4xl font-bold text-green-500 hover:text-blue-800 transition-colors duration-300 mb-2">
         OUR VISION, MISSION AND VALUES
       </h1>
-
+      <div className="burning-line-container mb-8">
+        <div className="burning-line"></div>
+      </div>
       {/* Cards Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {cards.map((card, index) => (

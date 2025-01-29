@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import '../components/styleCssFiles/burningLine.css'
 
 const Showcase2 = () => {
   const cards = [
@@ -31,9 +32,12 @@ const Showcase2 = () => {
 
   return (
     <div className="bg-white flex flex-col items-center py-16 px-6">
-      <h1 className="text-4xl font-bold text-green-500 mb-8 hover:text-blue-800">
+      <h1 className="text-4xl font-bold text-green-500 mb-4 hover:text-blue-800">
         Explore Our Products
       </h1>
+      <div className="burning-line-container mb-8">
+        <div className="burning-line"></div>
+      </div>
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
         {cards.map((card, index) => (
           <div

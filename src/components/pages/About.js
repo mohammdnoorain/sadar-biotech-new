@@ -3,6 +3,7 @@ import HeroSectionAbout from "../HeroSectionAbout";
 import Footer from "../Footer";
 import CardsAbout from "../CardsAbout";
 import ContactSection from "../ContactSection";
+import '../styleCssFiles/burningLine.css'
 
 const About = () => {
   return (
@@ -59,6 +60,7 @@ const About = () => {
             <h2 className="text-xl font-bold text-green-800 mb-4">
               Our Vision & Mission
             </h2>
+         
             <p className="text-blue-800 leading-relaxed">
               At Sadar Biotech, we envision a world where agriculture flourishes
               with the support of cutting-edge scientific solutions. Our mission
