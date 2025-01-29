@@ -28,9 +28,9 @@ const ContactUs = () => {
     console.log(formData);
     // Add form submission logic here
 
-    const serviceID = 'service_6v8qvub';
-    const templateID = 'template_ezi76nf';
-    const userID = 'SftXTRJ8K1da2gx5v';
+    const serviceID = 'service_y3e0suh';
+    const templateID = 'template_dhrarpe';
+    const userID = '1Rqrv9R0hhYRVNSWb';
     emailjs
       .send(serviceID, templateID, formData, userID)
       .then((response) => {

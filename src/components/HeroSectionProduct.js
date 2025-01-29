@@ -7,7 +7,7 @@ import '../components/styleCssFiles/HeroSectionProducts.css';
 function HeroSectionProduct() {
   return (
     <div className='hero-container-product'>
-   <img  src='/images/titleimg3.jpg' className='video12' />
+   <img  src='/images/truck.webp' className='video12' />
       <h1>Our Products</h1>
       <p>What are you waiting for?</p>
       <div className='hero-btns'>

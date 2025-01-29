@@ -23,8 +23,10 @@ const TopNavbar = () => {
           </p>
           <FaEnvelope className="text-gray-800 text-sm sm:text-base" />
           <p className="text-gray-800 text-xs sm:text-sm md:text-base">
+
             
 email: info@sadarbiotech.com
+
 
 
           </p>

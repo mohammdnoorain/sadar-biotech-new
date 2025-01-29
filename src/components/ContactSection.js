@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 const ContactSection = () => {
   return (
-    <div className="bg-white  flex items-center justify-center ">
-      <div className="container  mx-auto p-6 shadow-lg border border-gray-200 ">
+    <div className="bg-white  flex items-center justify-center  ">
+      <div className="  mx-auto p-6 shadow-lg border border-gray-200 w-[1300px] ">
         {/* Outer Wrapper */}
         <div className="flex flex-col md:flex-row">
           {/* Left Div - Contact Details */}
